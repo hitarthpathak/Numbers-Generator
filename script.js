@@ -18,7 +18,7 @@ function generate_table() {
 
 // ------------------------------------------------------------------------------------------------------------
 
-function generate_even_number() {
+function generate_even_numbers() {
 
     let even_input = document.getElementById("even-input");
 
@@ -42,7 +42,7 @@ function generate_even_number() {
 
 // ------------------------------------------------------------------------------------------------------------
 
-function generate_odd_number() {
+function generate_odd_numbers() {
 
     let odd_input = document.getElementById("odd-input");
 
@@ -66,7 +66,7 @@ function generate_odd_number() {
 
 // ------------------------------------------------------------------------------------------------------------
 
-function generate_prime_number() {
+function generate_prime_numbers() {
 
     let prime_input = document.getElementById("prime-input").value;
 
@@ -93,6 +93,66 @@ function generate_prime_number() {
         }
 
         return true;
+
+    }
+
+}
+
+// ------------------------------------------------------------------------------------------------------------
+
+function generate_fabonacci_numbers() {
+
+    let fabonacci_input = document.getElementById("fabonacci-input");
+
+    let fabonacci_data = document.getElementById("fabonacci-data");
+
+    let a = 0;
+
+    let b = 1;
+
+    let fabonacci = "";
+
+    for (let i = 0; i <= fabonacci_input.value; i++) {
+
+        let j = a + b;
+
+        a = b;
+
+        b = j;
+
+        fabonacci += j + "<br> <br>";
+
+        fabonacci_data.innerHTML = fabonacci;
+
+    }
+
+}
+
+// ------------------------------------------------------------------------------------------------------------
+
+function generate_double_numbers() {
+
+    let double_input = document.getElementById("double-input");
+
+    let double_data = document.getElementById("double-data");
+
+    let a = 0;
+
+    let b = 1;
+
+    let double = "";
+
+    for (let i = 0; i <= double_input.value; i++) {
+
+        let j = a + b;
+
+        a = j;
+
+        b = a;
+
+        double += j + "<br> <br>";
+
+        double_data.innerHTML = double;
 
     }
 

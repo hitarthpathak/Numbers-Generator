@@ -2,7 +2,9 @@
 
 <head>
 
-    <title>Loops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Numbers Generator</title>
 
     <link rel="icon" href="Images/Icon.jpg">
 
@@ -32,9 +34,9 @@
 
             <div class="input-box">
 
-                <input id="even-input" type="number" placeholder="Generate Even Numbers From 0 to ?">
+                <input id="even-input" type="number" placeholder="Generate Even Numbers From 0 To ?">
 
-                <button onclick="generate_even_number()">GENERATE!</button>
+                <button onclick="generate_even_numbers()">GENERATE!</button>
 
             </div>
 
@@ -46,9 +48,9 @@
 
             <div class="input-box">
 
-                <input id="odd-input" type="number" placeholder="Generate Odd Numbers From 0 to ?">
+                <input id="odd-input" type="number" placeholder="Generate Odd Numbers From 0 To ?">
 
-                <button onclick="generate_odd_number()">GENERATE!</button>
+                <button onclick="generate_odd_numbers()">GENERATE!</button>
 
             </div>
 
@@ -60,13 +62,41 @@
 
             <div class="input-box">
 
-                <input id="prime-input" type="number" placeholder="Generate Prime Numbers From 0 to ?">
+                <input id="prime-input" type="number" placeholder="Generate Prime Numbers From 0 To ?">
 
-                <button onclick="generate_prime_number()">GENERATE!</button>
+                <button onclick="generate_prime_numbers()">GENERATE!</button>
 
             </div>
 
             <div class="data" id="prime-data"></div>
+
+        </div>
+
+        <div class="box">
+
+            <div class="input-box">
+
+                <input id="fabonacci-input" type="number" placeholder="Generate Fabonacci Numbers X Times!">
+
+                <button onclick="generate_fabonacci_numbers()">GENERATE!</button>
+
+            </div>
+
+            <div class="data" id="fabonacci-data"></div>
+
+        </div>
+
+        <div class="box">
+
+            <div class="input-box">
+
+                <input id="double-input" type="number" placeholder="Generate Double Numbers X Times!">
+
+                <button onclick="generate_double_numbers()">GENERATE!</button>
+
+            </div>
+
+            <div class="data" id="double-data"></div>
 
         </div>
 
