@@ -138,21 +138,21 @@ function generate_double_numbers() {
 
     let double_data = document.getElementById("double-data");
 
-    let a = 0;
+    let num_1 = 0;
 
-    let b = 1;
+    let num_2 = 1;
 
     let double = "";
 
     for (let i = 0; i <= double_input.value; i++) {
 
-        let j = a + b;
+        let num_3 = num_1 + num_2;
 
-        a = j;
+        num_1 = num_3;
 
-        b = a;
+        num_2 = num_1;
 
-        double += j + "<br> <br>";
+        double += num_3 + "<br> <br>";
 
         double_data.innerHTML = double;
 
