@@ -108,11 +108,15 @@ function generate_fabonacci_numbers() {
 
     let fabonacci_data = document.getElementById("fabonacci-data");
 
+    let fabonacci = "";
+    
     let num_1 = 0;
+
+    fabonacci_data.innerHTML = fabonacci += num_1 + "<br> <br>";
 
     let num_2 = 1;
 
-    let fabonacci = "";
+    fabonacci_data.innerHTML = fabonacci += num_2 + "<br> <br>";
 
     for (let i = 0; i <= fabonacci_input.value; i++) {
 
