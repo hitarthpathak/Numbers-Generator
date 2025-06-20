@@ -74,16 +74,6 @@ function generate_prime_numbers() {
 
     let prime = "";
 
-    for (let i = 2; i < prime_input; i++) {
-
-        if (!isPrime(i)) continue;
-
-        prime += i + "<br/> <br/>";
-
-        prime_data.innerHTML = prime;
-
-    }
-
     function isPrime(prime_input) {
 
         for (let i = 2; i < prime_input; i++) {
@@ -93,6 +83,18 @@ function generate_prime_numbers() {
         }
 
         return true;
+
+    }
+
+    for (let i = 2; i < prime_input; i++) {
+
+        if (isPrime(i)) {
+
+            prime += i + "<br/> <br/>";
+
+            prime_data.innerHTML = prime;
+            
+        }        
 
     }
 
