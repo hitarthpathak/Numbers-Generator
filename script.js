@@ -108,21 +108,21 @@ function generate_fabonacci_numbers() {
 
     let fabonacci_data = document.getElementById("fabonacci-data");
 
-    let a = 0;
+    let num_1 = 0;
 
-    let b = 1;
+    let num_2 = 1;
 
     let fabonacci = "";
 
     for (let i = 0; i <= fabonacci_input.value; i++) {
 
-        let j = a + b;
+        let num_3 = num_1 + num_2;
 
-        a = b;
+        num_1 = num_2;
 
-        b = j;
+        num_2 = num_3;
 
-        fabonacci += j + "<br> <br>";
+        fabonacci += num_3 + "<br> <br>";
 
         fabonacci_data.innerHTML = fabonacci;
 
